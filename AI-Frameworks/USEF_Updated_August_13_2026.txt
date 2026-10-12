@@ -1,0 +1,2031 @@
+UNIFIED SYSTEM ENHANCEMENT FRAMEWORK (USEF)
+
+13 August 2026
+
+Architect: Parsa Tak
+License: CC BY 4.0 (Open Standard)
+Primary ecosystem: https://linktr.ee/Parsaetak
+Research horizon: 2025–13 August 2026
+Consolidation basis: original USEF + Integrated Architecture Edition + Integrated Research Edition, with redundant mechanisms removed and stronger evidence/implementation distinctions retained.
+
+
+READ THIS FIRST
+
+
+USEF is a universal framework for improving systems.
+
+Its scope includes human workflows, organizations, software, AI systems,
+robotics, intelligent architectures, and other complex adaptive systems.
+
+USEF is not a model, not a prompt, not a single algorithm, and not a claim
+that any named capability already exists in every runtime. It is a system-
+enhancement methodology that defines how to identify objectives, understand
+state, select improvements, deploy changes, measure outcomes, protect against
+failure, and iteratively evolve the system.
+
+The August 13, 2026 edition adds an explicit architecture for context,
+capability selection, orchestration, memory/state, verification, risk,
+and empirical evolution. These additions are intended to make USEF a stronger
+foundation for later AI-specific implementation work, including REP.
+
+Core principle:
+
+    Do not merely make a system work harder.
+    Make the system better at determining:
+    - what its objective actually is;
+    - what must be known;
+    - what can be inferred;
+    - what must be verified;
+    - what resources or capabilities are required;
+    - what may safely be changed;
+    - what state must be preserved;
+    - what can go wrong;
+    - how failure should be recovered;
+    - when to continue;
+    - when to stop;
+    - when to escalate.
+
+A growing procedure set is not automatically a better system. USEF therefore
+prefers the smallest effective mechanism that reliably improves the defined
+outcome.
+
+
+PART I — THE USEF CONSTITUTION
+
+
+1. PURPOSE
+
+USEF exists to improve real system outcomes rather than the appearance of
+intelligence, sophistication, productivity, safety, or progress.
+
+For every enhancement, define:
+
+    PURPOSE → BASELINE → TARGET → INTERVENTION → MEASUREMENT → DECISION
+
+2. EFFECTIVE SYSTEM INTELLIGENCE
+
+For intelligent systems, a useful systems-level model is:
+
+    Effective Intelligence ≈
+    Model/Capability Quality × Context Quality × Tool/Resource Capability
+    × Verification × State Integrity × Execution Reliability
+    × Orchestration Quality
+
+This is a conceptual systems equation, not a universal scientific law.
+Each factor can become a bottleneck. Increasing one factor may produce little
+benefit if another factor remains weak.
+
+3. CAPABILITY REALITY
+
+USEF must distinguish among:
+
+    SPECIFIED   — described by the framework;
+    AVAILABLE   — exposed by the runtime/system;
+    EXECUTED    — actually invoked or performed;
+    VERIFIED    — independently established to have worked;
+    HYPOTHETICAL — proposed or experimental.
+
+A specification never creates infrastructure by itself.
+
+4. EVIDENCE POSTURE
+
+USEF separates:
+
+    OBSERVATION
+    VERIFIED FACT
+    USER-PROVIDED CLAIM
+    LOGICAL DERIVATION
+    INFERENCE
+    ASSUMPTION
+    HYPOTHESIS
+    SIMULATION / FICTION
+
+Current and consequential claims should be verified using current external
+evidence where available.
+
+5. SYSTEM BOUNDARY
+
+Before changing a system, identify:
+
+    - system purpose;
+    - system owner / authority;
+    - internal components;
+    - external dependencies;
+    - stakeholders;
+    - inputs and outputs;
+    - state and memory;
+    - tools/resources;
+    - attack surfaces;
+    - failure modes;
+    - reversible vs irreversible actions;
+    - environmental constraints.
+
+6. ENHANCEMENT PRINCIPLE
+
+Optimize for measurable improvement in the success condition, not for the
+number of features, rules, agents, cycles, tokens, tools, or architectural
+layers.
+
+7. MINIMUM SUFFICIENT COMPLEXITY
+
+Prefer:
+
+    direct solution
+        → deterministic workflow
+        → single adaptive agent/system
+        → coordinated multi-agent/system architecture
+
+Only escalate when the additional complexity adds measurable value.
+
+8. HUMAN CONTROL
+
+Human authority remains explicit for consequential, irreversible, legally
+significant, safety-critical, or high-impact changes whenever the deployment
+context requires it.
+
+-
+USEF SYSTEM ARCHITECTURE
+-
+
+USEF treats improvement capability as a property of the whole governed system,
+not of a model or component in isolation.
+
+Conceptual systems model:
+
+    Effective Intelligence ≈
+    Capability Quality × Context Quality × Tool/Resource Capability
+    × Verification × State Integrity × Execution Reliability
+    × Orchestration Quality
+
+This is an architectural model, not a universal scientific law. The factors
+should be measured separately where practical; bottlenecks can dominate overall
+performance.
+
+Core system layers:
+
+    1. PURPOSE & SUCCESS
+       Define objective, scope, stakeholders, constraints, non-goals, and
+       measurable success conditions.
+
+    2. CONTEXT COMPILER
+       Build the bounded active context from relevant state, evidence, memory,
+       constraints, tools, and verification requirements.
+
+    3. ENHANCEMENT PLANNER
+       Assess risk, uncertainty, complexity, resource limits, reversibility,
+       and expected value before selecting interventions.
+
+    4. CAPABILITY REGISTRY
+       Describe available principles, Cycles, tools, workflows, agents,
+       data sources, and verification mechanisms with dependencies and
+       limitations.
+
+    5. ORCHESTRATOR
+       Select and compose the minimum sufficient capabilities.
+
+    6. EXECUTION LAYER
+       Perform reasoning, retrieval, computation, simulation, communication,
+       or authorized external actions.
+
+    7. VERIFICATION & AUDIT
+       Establish whether the success condition was actually satisfied.
+
+    8. STATE & MEMORY
+       Preserve useful, trustworthy state with provenance and integrity controls.
+
+    9. LEARNING & EVOLUTION
+       Convert validated evidence into controlled improvement.
+
+    10. GOVERNANCE & HUMAN CONTROL
+        Govern authority, safety, reversibility, escalation, and consequential
+        change.
+
+Dynamic control loop:
+
+    OBSERVE → DEFINE → COMPILE → ASSESS → SELECT → EXECUTE
+      → VERIFY → MEASURE → UPDATE STATE → GOVERN
+      → CONTINUE / STOP / ESCALATE
+
+USEF does not require every layer to be exposed as a separate software service.
+These are functional responsibilities that may be implemented together or
+separately depending on the runtime.
+
+
+
+PART II — FOUNDATIONAL PRINCIPLES
+
+
+These eight principles remain the universal core of USEF.
+
+1.1 PURPOSEFUL DESIGN
+Know the goal and define success.
+
+Objective:
+Define the desired state before optimizing the system.
+
+Operational requirements:
+1. State the primary purpose.
+2. Define the user/stakeholder value.
+3. Define the target state.
+4. Define measurable success criteria.
+5. Define non-goals and boundaries.
+6. Identify what would count as failure.
+7. Define the stop condition.
+
+Modernization:
+Success criteria should include both capability and reliability. A system is
+not improved merely because it becomes more capable if its error rate, risk,
+cost, or operational burden rises beyond acceptable bounds.
+
+1.2 EMPIRICAL MEASUREMENT
+Track and quantify improvement.
+
+Objective:
+Turn “better” into observable evidence.
+
+Operational requirements:
+1. Establish a baseline.
+2. Select task-specific metrics.
+3. Track quality, latency, cost, robustness, and relevant risk metrics.
+4. Separate leading indicators from final outcomes.
+5. Measure variance, not just averages.
+6. Compare against the baseline and an appropriate control.
+7. Preserve reproducible evaluation records.
+
+Research grounding:
+Modern AI-agent work increasingly emphasizes task suites, interactive evaluation,
+tracing, deterministic checks, and realistic workload measurement rather than
+single static benchmarks. OpenAI's current agent tooling includes tracing and
+workflow inspection; scientific-agent benchmarks increasingly use stepwise
+verification. (See Research Notes.)
+
+1.3 PROACTIVE PROTECTION
+Ensure robustness, security, and controlled failure.
+
+Objective:
+Anticipate failure before it becomes expensive or dangerous.
+
+Operational requirements:
+1. Threat-model the system.
+2. Identify abuse and misuse paths.
+3. Protect sensitive data.
+4. Validate external inputs and tool outputs.
+5. Apply least privilege.
+6. Establish rollback/recovery paths.
+7. Monitor for anomalies and drift.
+8. Bound blast radius.
+9. Test failure and degraded-operation modes.
+10. Verify post-action state.
+
+Modernization:
+For AI agents, protection must include prompt injection, tool misuse,
+credential exposure, malicious retrieved data, unsafe code execution, state
+corruption, excessive autonomy, and runaway loops.
+
+1.4 DEEP UNDERSTANDING
+Analyze, model, and synthesize the system and its context.
+
+Objective:
+Understand causes, dependencies, state, constraints, and interactions rather
+than optimizing isolated symptoms.
+
+Operational requirements:
+1. Map components and dependencies.
+2. Model important state variables.
+3. Distinguish correlation from causation when relevant.
+4. Identify hidden assumptions.
+5. Integrate relevant evidence from multiple sources.
+6. Identify contradictions.
+7. Represent uncertainty explicitly.
+8. Preserve provenance.
+9. Maintain a current problem representation.
+
+Modernization:
+Context becomes an explicit system component. Current agent engineering treats
+instructions, tools, memory, retrieved data, and intermediate state as parts of
+the effective operating context. Context quality therefore becomes auditable,
+not merely textual.
+
+1.5 TARGETED IMPROVEMENT
+Make the smallest high-value change that addresses the actual bottleneck.
+
+Objective:
+Avoid indiscriminate complexity.
+
+Operational requirements:
+1. Identify the highest-value bottleneck.
+2. Generate candidate interventions.
+3. Estimate expected value and side effects.
+4. Select the minimum sufficient intervention.
+5. Test the intervention.
+6. Reject changes without measurable benefit.
+7. Remove redundant mechanisms.
+
+1.6 SYNERGISTIC COLLABORATION
+Coordinate people, agents, components, and institutions.
+
+Objective:
+Produce better outcomes through coordinated specialized capabilities without
+assuming that more participants automatically improve performance.
+
+Operational requirements:
+1. Define roles and authority.
+2. Define handoff contracts.
+3. Separate identity from role.
+4. Share only relevant context.
+5. Preserve provenance.
+6. Resolve contradictions explicitly.
+7. Measure coordination overhead.
+8. Use multiple agents/components only when they add value.
+
+Current research and production systems show that specialized multi-agent
+coordination can be useful for complex tasks, while also revealing substantial
+coordination and evaluation challenges. Therefore multi-agent design is an
+optimization choice, not a default.
+
+1.7 ITERATIVE DEPLOYMENT
+Act, learn, measure, and evolve.
+
+Objective:
+Make improvement continuous without allowing uncontrolled change.
+
+Operational requirements:
+1. Deploy incrementally where possible.
+2. Record the pre-change state.
+3. Measure impact.
+4. Detect regressions.
+5. Roll back when necessary.
+6. Preserve successful state.
+7. Incorporate validated learning.
+8. Repeat.
+
+1.8 ETHICAL INTEGRITY
+Make improvement responsible as well as effective.
+
+Objective:
+Prevent optimization from becoming harmful optimization.
+
+Operational requirements:
+1. Identify affected stakeholders.
+2. Identify foreseeable harms.
+3. Assess fairness and distributional effects.
+4. Protect human agency and privacy.
+5. Maintain accountability.
+6. Make material uncertainty visible.
+7. Provide escalation paths.
+8. Require stronger governance as impact rises.
+
+Research grounding:
+NIST's AI Risk Management Framework remains a major reference point for
+operationalizing trustworthy AI through Govern, Map, Measure, and Manage, and
+NIST continues to revise the broader framework while publishing new profiles.
+USEF uses these ideas as external grounding, not as a replacement for USEF's
+own principles.
+
+
+PART II-A — APPLICATION TO HUMAN & ORGANIZATIONAL SYSTEMS
+
+
+USEF is not limited to AI. Its universal principles apply to people,
+organizations, workflows, and institutions.
+
+PERSONAL PRODUCTIVITY
+
+    Purpose:
+        Define the outcome that matters.
+
+    Measure:
+        Track task completion, quality, time, and sustainable workload.
+
+    Protect:
+        Reduce avoidable distractions, overload, privacy risks, and failure
+        points.
+
+    Understand:
+        Identify productive conditions, bottlenecks, dependencies, and causes.
+
+    Improve:
+        Test targeted changes rather than adding habits indiscriminately.
+
+    Collaborate:
+        Coordinate commitments, communication, and shared expectations.
+
+    Iterate:
+        Pilot changes, measure impact, retain what works, remove what does not.
+
+    Ethical Integrity:
+        Preserve health, autonomy, privacy, and sustainable working conditions.
+
+TEAM / PROJECT SYSTEMS
+
+    Purpose:
+        Define scope, outcomes, stakeholders, and non-goals.
+
+    Measure:
+        Track milestones, quality, budget, schedule, and risk.
+
+    Protect:
+        Identify failure modes, security boundaries, and recovery plans.
+
+    Understand:
+        Map dependencies, incentives, bottlenecks, and coordination patterns.
+
+    Improve:
+        Apply the smallest high-value process or technical intervention.
+
+    Collaborate:
+        Define roles, authority, handoffs, escalation, and shared state.
+
+    Iterate:
+        Pilot releases, measure outcomes, detect regressions, and roll back when
+        required.
+
+    Ethical Integrity:
+        Maintain transparency, fair workload, privacy, accountability, and
+        responsible stakeholder treatment.
+
+BUSINESS / OPERATIONAL SYSTEMS
+
+    Purpose:
+        Define the service or value proposition and measurable customer outcome.
+
+    Measure:
+        Track resolution quality, satisfaction, cost, throughput, reliability,
+        and risk.
+
+    Protect:
+        Secure sensitive data, credentials, operational systems, and recovery
+        paths.
+
+    Understand:
+        Analyze recurring failures, customer needs, process constraints, and
+        root causes.
+
+    Improve:
+        Test targeted workflow, tooling, training, or policy changes.
+
+    Collaborate:
+        Coordinate teams, systems, vendors, and decision authorities.
+
+    Iterate:
+        Deploy progressively and preserve rollback paths.
+
+    Ethical Integrity:
+        Protect customers, employees, partners, and affected communities.
+
+USEF therefore functions at multiple scales:
+
+    individual → team → organization → network → intelligent system
+
+
+PART III — THE USEF ENHANCEMENT ENGINE
+
+
+USEF is applied as a controlled improvement loop.
+
+    1. DEFINE
+       Purpose, scope, success condition, non-goals.
+
+    2. BASELINE
+       Measure current performance and failure modes.
+
+    3. MAP
+       Understand architecture, dependencies, context, resources, authority.
+
+    4. ASSESS
+       Risk, uncertainty, volatility, reversibility, expected value.
+
+    5. COMPILE
+       Select the relevant USEF principles and, for AI, relevant Cycles.
+
+    6. ORCHESTRATE
+       Decide whether to use a simple procedure, adaptive single system,
+       specialized components, or a multi-agent architecture.
+
+    7. ACT
+       Execute the minimum sufficient intervention.
+
+    8. VERIFY
+       Determine whether the intended state was actually achieved.
+
+    9. MEASURE
+       Compare results with baseline and acceptance criteria.
+
+    10. LEARN
+        Record validated lessons, failures, and state changes.
+
+    11. GOVERN
+        Approve, reject, roll back, or escalate the change.
+
+    12. EVOLVE
+        Update the system only when evidence justifies it.
+
+USEF should not mechanically perform every stage for every task. The runtime
+should select the minimum sufficient process based on complexity, consequence,
+uncertainty, and expected value.
+
+--
+USEF TASK SPECIFICATION
+--
+
+Before non-trivial enhancement work, construct:
+
+TASK_SPEC:
+    objective
+    desired_outcome
+    success_condition
+    non_goals
+    constraints
+    stakeholders
+    authority
+    risk_level
+    uncertainty
+    volatility
+    reversibility
+    available_resources
+    required_capabilities
+    active_context
+    relevant_memory
+    evidence_requirements
+    verification_method
+    rollback_method
+    stop_condition
+
+--
+USEF CONTEXT COMPILER
+--
+
+Context is a managed resource, not a passive transcript.
+
+The Context Compiler converts available information into a bounded ACTIVE
+CONTEXT for the current operation.
+
+Inputs may include:
+    - current task;
+    - system state;
+    - relevant memory;
+    - retrieved evidence;
+    - tools and tool schemas;
+    - user/stakeholder constraints;
+    - previous failures;
+    - current metrics;
+    - external environment.
+
+Compiler operations:
+    1. relevance filtering;
+    2. provenance validation;
+    3. authority classification;
+    4. freshness assessment;
+    5. contradiction detection;
+    6. risk tagging;
+    7. dependency mapping;
+    8. token/resource budgeting;
+    9. compression where safe;
+    10. removal of stale or irrelevant context.
+
+ACTIVE_CONTEXT should preferentially contain:
+    OBJECTIVE
+    CONSTRAINTS
+    CURRENT STATE
+    VERIFIED EVIDENCE
+    REQUIRED CAPABILITIES
+    ACTIVE MEMORY
+    KNOWN FAILURE MODES
+    NEXT ACTION
+    VERIFICATION CRITERIA
+
+Current agent research supports treating context as an engineering variable.
+Anthropic's 2026 agent guidance highlights token-efficient tools, just-in-time
+retrieval, compaction, structured memory, and sub-agent architectures for
+long-horizon work. A July 2026 study also reported that context quality can be
+measured separately from behavior and used as a leading signal for reliability.
+These findings support USEF's context-as-system-component model, while not
+proving that any single context strategy is universally optimal.
+
+--
+USEF CAPABILITY REGISTRY
+--
+
+Every enhancement capability should declare:
+
+CAPABILITY:
+    name
+    purpose
+    trigger
+    prerequisites
+    inputs
+    operations
+    outputs
+    tools
+    permissions
+    risks
+    verification
+    resource_cost
+    failure_modes
+    exit_condition
+
+A capability is activated only if its expected value justifies its cost and
+risk.
+
+--
+USEF ORCHESTRATION LADDER
+--
+
+Select the lowest-complexity architecture that can satisfy the task.
+
+LEVEL 0 — Direct / deterministic
+LEVEL 1 — Deterministic workflow
+LEVEL 2 — Single adaptive intelligent system with tools
+LEVEL 3 — Specialized component/agent pipeline
+LEVEL 4 — Coordinated multi-agent system
+LEVEL 5 — High-consequence orchestrated system with independent verification
+       and explicit human authority gates
+
+Multi-agent execution requires role separation, handoff contracts, context
+boundaries, provenance, termination criteria, and measurable benefit.
+Multiple instances of the same model do not automatically constitute
+independent evidence.
+
+--
+USEF VERIFICATION GATE
+--
+
+Verification is selected according to risk and checkability.
+
+Examples:
+    Mathematics → independent derivation / calculation
+    Code → tests / compiler / runtime checks
+    Data → schema / aggregation / reproducibility
+    Research → source tracing / contradiction search / dates
+    Tool action → post-action state verification
+    Policy → legal/constraint checks + human review where required
+    AI behavior → benchmark / adversarial test / evaluator
+
+A polished output is not a verified output.
+
+--
+USEF MEMORY AND STATE
+--
+
+When persistent state exists, classify it.
+
+M1 Stable Facts
+M2 Preferences / recurring constraints
+M3 Project State
+M4 Procedures / validated playbooks
+M5 Episodic History
+M6 Hypotheses
+M7 Untrusted Claims
+
+Memory operations:
+    WRITE → provenance, timestamp, authority, sensitivity
+    MANAGE → reconcile, update, invalidate, compress
+    READ → retrieve only relevant state
+    VERIFY → check critical recalled information against current evidence
+
+Current research on autonomous-agent memory emphasizes write/manage/read loops,
+structured retrieval, consolidation, contradiction handling, privacy, and the
+limits of long-term memory. PM-Bench (July 2026) also shows that prospective
+memory remains difficult for current LLM agents, so USEF must treat memory as a
+capability requiring measurement rather than assuming it works reliably.
+
+--
+USEF FAILURE MODEL
+--
+
+Classify failures before retrying.
+
+F1 Knowledge failure
+F2 Context failure
+F3 Reasoning failure
+F4 Specification failure
+F5 Tool/resource failure
+F6 State/memory failure
+F7 Verification failure
+F8 Execution failure
+F9 Permission/authority failure
+F10 Governance failure
+F11 Coordination failure
+F12 Evaluation failure
+
+Recovery:
+    STOP unsafe propagation
+    → preserve useful state
+    → identify failure class
+    → change the failing variable
+    → retry only if justified
+    → verify
+    → update state
+    → escalate if necessary
+
+Do not repeatedly retry an unchanged strategy when the failure class indicates
+that the underlying variable is wrong.
+
+
+PART IV — AI-SPECIFIC USEF CYCLES
+
+
+The original 39-cycle architecture is retained. The following descriptions
+update the implementation basis and operational role of each Cycle for the
+August 13, 2026 environment.
+
+
+SECTION 3 — CORE OPERATIONS & REASONING
+CYCLES 1–6
+
+
+CYCLE 1 — META-METRICS & PERFORMANCE BENCHMARKING
+
+Objective:
+Define, measure, and interpret whether the AI system is actually improving.
+
+Modern technical focus:
+- task-specific success metrics;
+- quality, latency, cost, throughput, reliability;
+- robustness and safety metrics;
+- human utility where relevant;
+- trace-based operational telemetry;
+- baseline/control comparisons;
+- regression testing;
+- interactive benchmark tasks;
+- statistical significance and uncertainty.
+
+Required output:
+A reproducible scorecard with baseline, target, variance, evidence, and stop /
+roll-back criteria.
+
+Do not treat a model benchmark as proof of production capability.
+
+CYCLE 2 — ADVERSARIAL ROBUSTNESS & SECURITY ENGINE
+
+Objective:
+Protect the system, its inputs, tools, memory, credentials, outputs, and
+execution environment from adversarial or accidental failure.
+
+Modern focus:
+- prompt and indirect prompt injection;
+- malicious tool outputs;
+- retrieval poisoning;
+- data poisoning;
+- model misuse;
+- credential isolation;
+- sandboxing;
+- least privilege;
+- anomaly detection;
+- secure tool schemas;
+- adversarial evaluation;
+- incident response and containment.
+
+Quantum security is treated as a separate migration concern under Cycle 18.
+
+CYCLE 3 — DYNAMIC KNOWLEDGE GRAPH / KNOWLEDGE SYSTEM SYNTHESIS
+
+Objective:
+Build structured, updateable knowledge representations that support reliable
+retrieval, relationship reasoning, provenance, and contradiction handling.
+
+Modern focus:
+- knowledge graphs;
+- vector / hybrid retrieval;
+- entity and relationship extraction;
+- temporal and provenance metadata;
+- graph validation;
+- source confidence;
+- retrieval quality measurement;
+- domain-specific structured memory;
+- just-in-time context assembly.
+
+A knowledge store must not become an unquestioned source of truth.
+
+CYCLE 4 — FOUNDATIONAL META-CRITIQUE & FEEDBACK INTEGRATION
+
+Objective:
+Evaluate outputs and process quality, identify failure causes, and integrate
+validated corrective feedback.
+
+Modern focus:
+- evaluator models;
+- deterministic tests;
+- adversarial critique;
+- root-cause analysis;
+- trace review;
+- human feedback;
+- benchmark regression;
+- failure clustering;
+- targeted corrective actions.
+
+Self-critique alone is not independent verification.
+
+CYCLE 5 — STAKEHOLDER ALIGNMENT & CONTEXT WEAVING
+
+Objective:
+Construct a current representation of goals, stakeholders, constraints,
+preferences, environment, and task context.
+
+Modern focus:
+- Context Compiler integration;
+- stakeholder modeling;
+- mixed-initiative interaction;
+- context change detection;
+- preference hierarchy;
+- conflict identification;
+- relevant-history selection;
+- explicit goal/constraint state.
+
+CYCLE 6 — HUMAN-AI SYNERGY & TRUST OPTIMIZATION
+
+Objective:
+Improve human-AI collaboration, calibrated trust, usability, transparency,
+and division of labor.
+
+Modern focus:
+- mixed-initiative workflows;
+- calibrated uncertainty;
+- adaptive explanation;
+- handoffs;
+- human approval gates;
+- task decomposition;
+- shared state representations;
+- cognitive load management;
+- user understanding and agency.
+
+Trust should be earned through accurate behavior and provenance, not tone.
+
+
+SECTION 4 — ADVANCED COGNITION & ADAPTATION
+CYCLES 7–12
+
+
+CYCLE 7 — TEMPORAL & CAUSAL REASONING ENGINE
+
+Objective:
+Reason about sequences, temporal dependencies, interventions, consequences,
+and counterfactuals.
+
+Modern focus:
+- causal graphs and structural causal models;
+- temporal reasoning;
+- event-state representations;
+- forecasting with uncertainty;
+- intervention / counterfactual analysis;
+- versioned evidence;
+- causal validation against known ground truth where available.
+
+Do not convert correlation into causation without evidence.
+
+CYCLE 8 — ADAPTIVE DEPLOYMENT & RESOURCE OPTIMIZATION
+
+Objective:
+Allocate model, tool, memory, and compute resources according to task value,
+risk, latency, energy, and environment.
+
+Modern focus:
+- dynamic model selection;
+- capability routing;
+- tool routing;
+- batching/caching;
+- compression and quantization;
+- edge/cloud placement;
+- sandbox allocation;
+- progressive rollout;
+- rollback;
+- energy/cost measurement.
+
+The principle is adaptive resource allocation, not a requirement to use any
+particular compiler or model family.
+
+CYCLE 9 — CORE ETHICAL CONSISTENCY & RULEBOOK EVOLUTION
+
+Objective:
+Maintain explicit, auditable ethical constraints and decision boundaries.
+
+Modern focus:
+- machine-readable policies;
+- policy precedence;
+- conflict detection;
+- runtime checks;
+- governance versioning;
+- human review;
+- policy testing;
+- audit trails.
+
+Ethical rules may inform behavior but do not eliminate the need for case-specific
+judgment and human governance.
+
+CYCLE 10 — CROSS-DOMAIN ABSTRACTION & FLEXIBILITY LAYER
+
+Objective:
+Transfer useful reasoning structures and representations between domains.
+
+Modern focus:
+- analogical reasoning;
+- abstraction;
+- ontology mapping;
+- transfer and domain adaptation;
+- compositional task representations;
+- modular capability reuse;
+- out-of-distribution evaluation.
+
+Cross-domain transfer must be verified; analogy is not proof.
+
+CYCLE 11 — DYNAMIC CONTEXTUAL ETHICS & BIAS MITIGATION
+
+Objective:
+Adapt ethical analysis to context while continuously measuring bias and fairness
+under the actual application conditions.
+
+Modern focus:
+- stakeholder-sensitive trade-offs;
+- subgroup analysis;
+- counterfactual analysis where appropriate;
+- distribution-shift monitoring;
+- fairness metrics selected for the use case;
+- bias root-cause analysis;
+- human review of contested ethical trade-offs.
+
+Never optimize a fairness metric blindly when it conflicts with other necessary
+properties; make trade-offs explicit.
+
+CYCLE 12 — MULTIMODAL DATA FUSION & HOLISTIC UNDERSTANDING
+
+Objective:
+Integrate text, images, audio, video, structured data, sensor data, and other
+modalities when they materially improve the task.
+
+Modern focus:
+- multimodal retrieval;
+- cross-modal grounding;
+- structured fusion;
+- temporal synchronization;
+- provenance per modality;
+- uncertainty across modalities;
+- modality-specific failure detection.
+
+A modality should be added only when it provides measurable value.
+
+
+SECTION 5 — AUTONOMOUS EVOLUTION, GOVERNANCE & SYSTEM RESILIENCE
+CYCLES 13–30
+
+
+CYCLE 13 — QUANTUM-INSPIRED & ADVANCED COMPUTATIONAL OPTIMIZATION
+
+Objective:
+Improve difficult optimization tasks using classical, quantum-inspired, or
+quantum methods when evidence shows a practical benefit.
+
+Modern focus:
+- combinatorial optimization;
+- heuristic search;
+- constraint solving;
+- tensor methods;
+- quantum-inspired algorithms;
+- quantum algorithms where suitable hardware exists;
+- rigorous comparison against strong classical baselines.
+
+No quantum method receives preference merely because it is quantum.
+
+CYCLE 14 — PERSONA-ADAPTIVE REASONING & EMPATHETIC COMMUNICATION
+
+Objective:
+Adapt communication and interaction to user needs, expertise, role, and
+context while preserving epistemic and safety integrity.
+
+Modern focus:
+- adaptive explanation depth;
+- communication preferences;
+- role-specific interfaces;
+- uncertainty-aware language;
+- emotional-context detection only when justified;
+- user-agency preservation.
+
+Personalization may alter expression and workflow, not factual standards.
+
+CYCLE 15 — SELF-HEALING MEMORY & KNOWLEDGE INTEGRITY
+
+Objective:
+Maintain reliable persistent state over long operation.
+
+Modern focus:
+- write/manage/read memory loop;
+- tiered memory;
+- episodic-to-semantic consolidation;
+- provenance;
+- contradiction detection;
+- invalidation;
+- learned/retrieval policies;
+- memory benchmarks;
+- privacy and access controls;
+- recovery from corrupted state.
+
+Recent 2026 research shows long-term memory remains a significant bottleneck;
+therefore memory quality must be measured explicitly.
+
+CYCLE 16 — FEDERATED EVOLUTION & DECENTRALIZED LEARNING MESH
+
+Objective:
+Support collective learning across distributed systems without requiring
+centralization of all raw data.
+
+Modern focus:
+- federated learning;
+- secure aggregation;
+- privacy-preserving computation;
+- contribution validation;
+- Byzantine-resilient aggregation;
+- provenance;
+- model/update governance;
+- network-scale observability.
+
+Collective learning does not imply collective truth. Contributions require
+validation.
+
+CYCLE 17 — AUTONOMOUS META-LEARNING & SELF-IMPROVEMENT ENGINE
+
+Objective:
+Enable bounded, measured improvement in learning strategies, routing policies,
+resource selection, or system architecture.
+
+Modern focus:
+- meta-learning;
+- automated evaluation;
+- policy optimization;
+- architecture search;
+- adaptive Cycle selection;
+- parameter optimization;
+- self-generated improvement proposals.
+
+All self-improvement requires evaluation, rollback, and governance.
+
+CYCLE 18 — QUANTUM-RESISTANT GOVERNANCE & POLICY INFRASTRUCTURE
+
+Objective:
+Protect governance, identity, signatures, key exchange, policy state, and
+critical data against future quantum-capable adversaries.
+
+Modern basis:
+NIST has finalized FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), and FIPS 205
+(SLH-DSA) and continues additional standardization and migration guidance.
+As of June 2026, NIST was also publishing further PQC migration and
+interoperability work.
+
+Operational focus:
+- crypto-agility;
+- inventory of vulnerable cryptography;
+- migration planning;
+- hybrid transition strategies;
+- key lifecycle management;
+- authenticated policy updates;
+- long-term integrity verification.
+
+Use current NIST standards and transition guidance rather than speculative
+quantum mechanisms.
+
+CYCLE 19 — TEMPORAL CONSISTENCY & GOAL INTEGRITY CHECKER
+
+Objective:
+Detect drift in goals, constraints, policies, identity, state, and validated
+behavior over time.
+
+Modern focus:
+- immutable/versioned objectives;
+- state snapshots;
+- goal-drift detection;
+- policy regression tests;
+- model/version comparison;
+- longitudinal audits;
+- rollback triggers.
+
+A system must not silently redefine its objective simply because its context
+changed.
+
+CYCLE 20 — NEUROSYMBOLIC LOGIC & EXPLAINABILITY BRIDGE
+
+Objective:
+Combine learned pattern recognition with explicit symbols, rules,
+constraints, and machine-checkable reasoning where beneficial.
+
+Modern focus:
+- symbolic constraints;
+- rule execution;
+- structured knowledge;
+- formal checks;
+- proof/certificate generation where practical;
+- out-of-distribution testing.
+
+Use formalism where it improves reliability, not as decoration.
+
+CYCLE 21 — AUTONOMOUS AUDIT & COMPLIANCE GUARDIAN
+
+Objective:
+Provide independent monitoring of system behavior, policy compliance,
+security, and framework adherence.
+
+Modern focus:
+- independent evaluator processes;
+- compliance tests;
+- anomaly detection;
+- policy regression;
+- cross-agent audit;
+- immutable logs;
+- escalation.
+
+An auditor should have sufficient separation from the component it evaluates.
+
+CYCLE 22 — EMBODIED AI & SENSORIMOTOR INTEGRATION
+
+Objective:
+Extend USEF safely into systems that perceive and act in the physical world.
+
+Modern focus:
+- multimodal sensor fusion;
+- world modeling;
+- action safety;
+- control-loop verification;
+- simulation before deployment;
+- runtime safety monitors;
+- physical rollback / safe-stop where applicable.
+
+Physical-world actions require stronger verification because consequences may
+be immediate and difficult to reverse.
+
+CYCLE 23 — LEGAL & REGULATORY COMPLIANCE ENGINE
+
+Objective:
+Translate applicable legal and contractual obligations into operational
+constraints, monitoring rules, and escalation paths.
+
+Modern focus:
+- jurisdiction detection;
+- authoritative legal retrieval;
+- rule extraction;
+- versioning;
+- conflict handling;
+- human/legal review;
+- compliance evidence.
+
+USEF does not claim that automated legal interpretation is sufficient on its
+own for consequential legal decisions.
+
+CYCLE 24 — SELF-EXPLANATORY AI & TRANSPARENT REPORTING
+
+Objective:
+Provide understandable, truthful, audience-appropriate explanations of system
+behavior, evidence, constraints, decisions, and verification status.
+
+Modern focus:
+- provenance reports;
+- decision summaries;
+- uncertainty communication;
+- why/why-not/what-if analysis;
+- audit traces;
+- machine-readable decision records.
+
+Do not expose private chain-of-thought as a substitute for useful explanation.
+Prefer concise reasoning summaries, evidence, assumptions, and verification
+results.
+
+CYCLE 25 — AI-ASSISTED POLICY GENERATION & GOVERNANCE FRAMEWORKS
+
+Objective:
+Use AI to analyze, draft, test, and improve policies under human governance.
+
+Modern focus:
+- policy gap analysis;
+- scenario simulation;
+- stakeholder impact analysis;
+- formal constraints;
+- legal review;
+- adversarial policy testing;
+- version control;
+- human approval.
+
+Policy generation is proposal generation, not autonomous legitimacy.
+
+CYCLE 26 — DECENTRALIZED POLICY CONSENSUS & GOVERNANCE MESH
+
+Objective:
+Coordinate governance decisions across distributed systems or institutions.
+
+Modern focus:
+- explicit authority models;
+- consensus protocols where appropriate;
+- transparent voting;
+- adversarial resistance;
+- provenance;
+- quorum/threshold policies;
+- appeal and override mechanisms.
+
+Consensus is not correctness. Governance mechanisms must retain evidence-based
+review.
+
+CYCLE 27 — GAME-THEORETIC NEGOTIATION & CONFLICT RESOLUTION
+
+Objective:
+Model strategic interaction among agents and stakeholders and identify fair,
+robust, or mutually beneficial resolutions.
+
+Modern focus:
+- classical game theory;
+- mechanism design;
+- bargaining;
+- preference modeling;
+- coalition formation;
+- incentive compatibility;
+- multi-agent simulations.
+
+Quantum game theory remains an optional research direction, not a default
+production assumption.
+
+CYCLE 28 — POLICY DRIFT & COHERENCE MONITOR
+
+Objective:
+Detect distributed or longitudinal deviations from approved policy, goals,
+and operating behavior.
+
+Modern focus:
+- cross-agent telemetry;
+- behavioral baselines;
+- change-point detection;
+- correlation analysis;
+- synchronized drift detection;
+- quarantine and escalation.
+
+Do not infer maliciousness from correlation alone; preserve uncertainty.
+
+CYCLE 29 — DECENTRALIZED AI ADJUDICATION & DISPUTE RESOLUTION
+
+Objective:
+Provide structured mechanisms for disputes among agents, systems, or human-AI
+collectives.
+
+Modern focus:
+- evidence submission;
+- provenance;
+- rule application;
+- independent review;
+- appeal;
+- human escalation;
+- immutable records where appropriate.
+
+Complex or high-stakes disputes require human authority.
+
+CYCLE 30 — ADVANCED BIAS AUDITING & META-BIAS CORRECTION
+
+Objective:
+Audit not only models and data, but the framework itself for systematic bias,
+blind spots, measurement artifacts, and optimization distortions.
+
+Modern focus:
+- subgroup evaluation;
+- distribution-shift tests;
+- counterfactual testing where appropriate;
+- evaluator-bias analysis;
+- framework-level red teaming;
+- benchmark diversity;
+- corrective governance.
+
+The evaluator and benchmark can themselves be sources of bias.
+
+
+SECTION 6 — UNIVERSAL SYNTHESIS & AGI ORCHESTRATION
+CYCLES 31–39
+
+
+CYCLE 31 — UNIVERSAL DOMAIN TRANSLATION & ONTOLOGICAL MAPPING
+
+Objective:
+Map compatible structures across domains without pretending that fundamentally
+different concepts are identical.
+
+Modern focus:
+- ontology engineering;
+- schema alignment;
+- conceptual mapping;
+- analogy detection;
+- causal structure transfer;
+- cross-domain evidence tracing.
+
+Every mapping should declare what is preserved, what is lost, and what remains
+an analogy.
+
+CYCLE 32 — HUMAN-AI CO-EVOLUTION & RECIPROCAL LEARNING
+
+Objective:
+Improve the human-AI system jointly rather than optimizing the machine while
+degarding the human as a fixed external variable.
+
+Modern focus:
+- shared mental models;
+- reciprocal teaching;
+- adaptive delegation;
+- user-skill growth;
+- cognitive augmentation;
+- human learning outcomes;
+- long-term collaboration quality.
+
+The target is synergistic performance, not human dependence.
+
+CYCLE 33 — EMERGENT PATTERN IMPACT PREDICTOR & PROACTIVE FORESIGHT
+
+Objective:
+Detect weak signals and assess their possible future effects.
+
+Modern focus:
+- anomaly detection;
+- weak-signal analysis;
+- change-point detection;
+- causal hypothesis generation;
+- scenario planning;
+- uncertainty-aware forecasting;
+- early-warning indicators.
+
+Forecasts must remain probabilistic or conditional unless evidence supports
+stronger claims.
+
+CYCLE 34 — ULTRA-COMPLEX SYSTEM MODELING & EMERGENCE ANALYSIS
+
+Objective:
+Model systems with many interacting components, feedback loops, adaptive
+behavior, uncertainty, and nonlinear effects.
+
+Modern focus:
+- agent-based modeling;
+- system dynamics;
+- network analysis;
+- causal modeling;
+- sensitivity analysis;
+- simulation;
+- scenario exploration;
+- tipping-point analysis.
+
+Simulation results are evidence about the model, not direct proof about reality.
+
+CYCLE 35 — PHILOSOPHICAL, WISDOM & CULTURAL KNOWLEDGE INTEGRATION
+
+Objective:
+Integrate philosophical, ethical, cultural, historical, and wisdom traditions
+for richer reasoning about values, meaning, purpose, and human concerns.
+
+Modern focus:
+- comparative interpretation;
+- provenance;
+- disagreement mapping;
+- cultural-context preservation;
+- distinction between empirical claims and philosophical claims;
+- epistemic humility.
+
+No philosophical or esoteric tradition receives scientific status merely because
+it is included in the knowledge base.
+
+CYCLE 36 — ETHICAL PARADOX RESOLUTION & ADVANCED MORAL REASONING
+
+Objective:
+Handle cases where legitimate values, duties, risks, or stakeholder interests
+conflict.
+
+Modern focus:
+- explicit value identification;
+- multi-framework analysis;
+- rights and duties;
+- consequences;
+- reversibility;
+- uncertainty;
+- stakeholder trade-offs;
+- human escalation.
+
+The goal is a defensible analysis and decision pathway, not fabricated certainty
+about inherently contested moral questions.
+
+CYCLE 37 — UNIVERSAL KNOWLEDGE UNIFIER & FOUNDATIONAL PRINCIPLES DERIVATION
+
+Objective:
+Search for reusable principles that connect validated knowledge across domains.
+
+Modern focus:
+- meta-ontology;
+- knowledge graph integration;
+- abstraction;
+- causal structure comparison;
+- scientific hypothesis generation;
+- formal consistency checking;
+- empirical prediction tests.
+
+A proposed unifying principle is accepted only as hypothesis until independently
+supported.
+
+CYCLE 38 — USEF SELF-EVALUATION & META-FRAMEWORK EVOLUTION ENGINE
+
+Objective:
+Allow USEF to improve itself under controlled, measurable, and governed change.
+
+Required loop:
+
+    OBSERVE USEF PERFORMANCE
+        ↓
+    IDENTIFY GAP
+        ↓
+    FORMULATE CANDIDATE CHANGE
+        ↓
+    CHECK DUPLICATION / CONFLICT
+        ↓
+    SIMULATE / BENCHMARK
+        ↓
+    ADVERSARIAL REVIEW
+        ↓
+    HUMAN / AUTHORIZED REVIEW
+        ↓
+    PILOT
+        ↓
+    MEASURE
+        ↓
+    ACCEPT / REJECT / ROLLBACK
+
+Never add a permanent rule merely because a single failure occurred.
+
+The framework must prefer fewer, stronger mechanisms over uncontrolled prompt
+or policy growth.
+
+CYCLE 39 — AGI DEVELOPMENT ORCHESTRATION & ETHICAL GOVERNANCE
+
+Objective:
+Use USEF as a systems-governance methodology for evaluating and organizing
+advanced general-purpose AI development.
+
+The Cycle is a planning and governance framework, not a claim that AGI exists
+or that the listed architecture is sufficient to create it.
+
+Required domains:
+1. purpose and success criteria;
+2. robustness and security;
+3. knowledge/context architecture;
+4. reasoning and planning;
+5. memory and state;
+6. tool use and execution;
+7. human oversight and control;
+8. evaluation and verification;
+9. self-improvement boundaries;
+10. deployment and containment;
+11. societal and systemic impact;
+12. reversible, staged rollout.
+
+Any actual AGI development must remain governed by contemporary evidence,
+engineering constraints, applicable safety requirements, and human oversight.
+
+
+PART V — CROSS-CYCLE ARCHITECTURE
+
+
+USEF Cycles are capabilities, not mandatory sequential steps.
+
+The active system should dynamically select Cycles according to the task.
+
+Example:
+
+    Research task:
+        1 → 3 → 4 → 7 → 10 → 24
+
+    Complex system design:
+        1 → 3 → 4 → 8 → 19 → 30 → 34
+
+    High-consequence AI action:
+        1 → 2 → 5 → 9 → 19 → 21 → 24 → verification gate
+
+    Long-horizon agent:
+        1 → 3 → 4 → 5 → 8 → 15 → 17 → 19 → 28
+
+These are examples, not fixed recipes.
+
+--
+API-LEVEL INTEGRATION
+
+For programmatic implementations, a USEF task may be represented by:
+
+{
+  "task_description": "...",
+  "context_data": ["..."],
+  "usef_principles_to_apply": [1, 2, 4, 5, 7],
+  "usef_cycles_to_activate": [1, 3, 4, 6],
+  "operational_constraints": {
+    "risk_level": "material",
+    "verification_requirements": ["..."],
+    "resource_budget": {"latency": "...", "cost": "..."}
+  }
+}
+
+This structure is a specification pattern. It does not imply that any runtime
+already exposes a USEF API or that the named capabilities have been executed.
+
+CYCLE ACTIVATION CONTRACT
+--
+
+Before activation, a Cycle should declare:
+
+    CYCLE_ID
+    OBJECTIVE
+    TRIGGER
+    INPUTS
+    ACTIVE_CONTEXT
+    DEPENDENCIES
+    OPERATIONS
+    TOOLS
+    PERMISSIONS
+    OUTPUT
+    METRICS
+    VERIFICATION
+    FAILURE_MODES
+    STATE_EFFECTS
+    RESOURCE_PROFILE
+    EXIT_CONDITION
+    RESOURCE_BUDGET
+
+A Cycle may be active, dormant, unavailable, experimental, or deprecated.
+
+Capability status is operationally meaningful:
+
+    ACTIVE       — authorized and currently selected.
+    DORMANT      — defined but not selected.
+    UNAVAILABLE  — specified but not exposed by the runtime.
+    EXPERIMENTAL — under controlled evaluation.
+    DEPRECATED   — retained only for compatibility or migration.
+
+A capability must not be represented as executed merely because it is specified
+or selected.
+
+--
+CYCLE SELECTION ALGORITHM
+--
+
+1. Parse task.
+2. Define success condition.
+3. Assess consequence and uncertainty.
+4. Identify required capabilities.
+5. Identify available capabilities.
+6. Select candidate Cycles.
+7. Remove redundant Cycles.
+8. Check dependencies.
+9. Estimate execution cost and risk.
+10. Select the minimum sufficient stack.
+11. Execute.
+12. Verify.
+13. Measure.
+14. Retain, replace, or remove the stack.
+
+--
+CONTEXT QUALITY AUDIT
+--
+
+Audit context for:
+
+    - role clarity;
+    - objective clarity;
+    - constraint coverage;
+    - instruction consistency;
+    - tool schema quality;
+    - grounding sufficiency;
+    - provenance;
+    - injection resistance;
+    - memory relevance;
+    - token/resource efficiency;
+    - state freshness.
+
+Context degradation is treated as an architecture failure, not merely a model
+failure.
+
+--
+AGENT / COMPONENT QUALITY AUDIT
+--
+
+For each specialized component ask:
+
+    Does specialization add measurable value?
+    Is the component actually independent?
+    Does it require separate context?
+    Does it create coordination cost?
+    Does it have sufficient authority?
+    Can its output be verified?
+    Can it fail safely?
+    Does it have a clear termination condition?
+
+--
+STATE INTEGRITY MODEL
+--
+
+Track at minimum:
+
+    current objective
+    current constraints
+    current system state
+    active Cycles
+    tool state
+    evidence state
+    memory state
+    unresolved contradictions
+    risk state
+    last verified milestone
+    next verification criterion
+
+Important state transitions should be versioned.
+
+
+PART VI — MEASUREMENT & EVALUATION
+
+
+USEF improvement claims must be empirically tested.
+
+Minimum evaluation dimensions:
+
+    Correctness
+    Task completion
+    Robustness
+    Reliability
+    Evidence quality
+    Safety
+    Security
+    Context quality
+    Memory quality
+    Tool efficiency
+    Coordination overhead
+    Latency
+    Cost
+    Human utility
+    Reproducibility
+
+Where applicable, use:
+
+    baseline comparison
+    ablation testing
+    randomized or controlled comparison
+    adversarial testing
+    long-horizon testing
+    regression testing
+    failure-injection testing
+    independent evaluation
+    deterministic tests
+    human expert evaluation
+
+Research grounding:
+
+1. PM-Bench (July 2026) found prospective memory challenging even for modern
+   agents, supporting explicit memory benchmarking rather than assumption.
+
+2. SciAgentArena (June 2026) found current agents perform better on well-
+   specified workflows than open-ended scientific discovery, supporting the
+   principle that task structure and verification matter.
+
+3. A July 2026 context-quality study reported measurable relationships between
+   context quality and downstream reliability dimensions. USEF therefore treats
+   context auditing as a first-class evaluation layer.
+
+4. Current production agent platforms emphasize tools, memory, sandboxing,
+   tracing, handoffs, and long-horizon execution, reinforcing the need for an
+   architecture larger than a prompt alone.
+
+--
+USEF BENCHMARK MATRIX
+--
+
+A future USEF benchmark suite should contain at minimum:
+
+A. Simple utility tasks
+B. Multi-constraint reasoning
+C. Research with conflicting evidence
+D. Tool-use workflows
+E. Long-context tasks
+F. Long-horizon memory tasks
+G. Prompt-injection and tool-poisoning tests
+H. Multi-agent coordination tasks
+I. System-design tasks
+J. High-consequence decision gates
+K. Framework self-modification tasks
+L. Recovery-after-failure tasks
+M. Regression tasks against prior USEF versions
+
+Every benchmark should record:
+
+    task
+    baseline
+    active Cycles
+    context configuration
+    tool configuration
+    result
+    verification evidence
+    cost
+    latency
+    failure class
+    recovery result
+
+
+PART VII — RESEARCH-GROUNDED MODERNIZATION NOTES
+
+
+The August 13, 2026 USEF update incorporates the following contemporary
+engineering trends and evidence:
+
+1. Context engineering is now treated as an explicit engineering discipline
+   for agents. Current production guidance emphasizes just-in-time retrieval,
+   structured memory, context compaction, and sub-agent architectures.
+
+2. Agent systems increasingly combine a foundation model with tools, memory,
+   planning, state, environment interaction, safety controls, and observability.
+   The practical system is therefore larger than the model alone.
+
+3. Long-horizon memory remains an active research problem. Current benchmarks
+   reveal substantial failures in prospective memory and professional-domain
+   multi-session retrieval.
+
+4. Evaluation is becoming more interactive and stepwise. For scientific and
+   tool-using systems, static single-answer benchmarks are insufficient to
+   characterize long-horizon behavior.
+
+5. Safety engineering must consider blast radius, not only probability of
+   failure. As agents receive more tools and permissions, containment and
+   least-privilege controls become architectural components.
+
+6. NIST AI RMF remains a useful external reference for trustworthy-AI risk
+   management, while its ecosystem continues to evolve in 2026.
+
+7. Post-quantum migration is no longer purely theoretical: NIST has finalized
+   ML-KEM, ML-DSA, and SLH-DSA standards and continues migration/standardization
+   work in 2026. USEF therefore treats crypto-agility and migration planning as
+   concrete governance concerns.
+
+8. Multi-agent architectures are useful for some complex problems but are not
+   inherently superior. USEF therefore makes orchestration conditional on
+   measurable benefit and coordination cost.
+
+
+PART VIII — USEF EVOLUTION GOVERNANCE
+
+
+ANTI-PATCH PRINCIPLE
+
+Do not solve every failure by adding a permanent rule.
+
+Before modifying USEF:
+
+1. Identify the root failure.
+2. Check whether an existing Principle/Cycle addresses it.
+3. Check for duplication.
+4. Check instruction conflicts.
+5. Check increased cognitive/compute burden.
+6. Propose the smallest effective change.
+7. Benchmark against the previous version.
+8. Adversarially test the change.
+9. Record the evidence.
+10. Accept, reject, or revert.
+
+VERSION-INDEPENDENCE
+
+Keep stable principles separate from volatile implementations.
+
+Stable:
+    purpose
+    evidence
+    measurement
+    protection
+    verification
+    authorization
+    least privilege
+    user agency
+    task success
+    iterative improvement
+
+Volatile:
+    model names
+    tool names
+    API versions
+    interface details
+    vendor-specific capabilities
+    temporary benchmarks
+    specific deployment technologies
+
+META-FRAMEWORK CHANGE TEST
+
+A proposed USEF change must demonstrate one or more of:
+
+    higher task success;
+    lower error rate;
+    stronger robustness;
+    better evidence quality;
+    lower resource cost for equal quality;
+    better human utility;
+    better recovery;
+    better safety/security;
+    improved generalization;
+    reduced complexity for equal or better performance.
+
+If none is demonstrated, the change should normally be rejected.
+
+
+PART IX — IMPLEMENTATION MATURITY MODEL
+
+
+LEVEL 1 — PRINCIPLED
+The system follows USEF principles manually.
+
+LEVEL 2 — INSTRUMENTED
+Metrics, baselines, and failure tracking exist.
+
+LEVEL 3 — MODULAR
+Cycles/capabilities can be selected and composed.
+
+LEVEL 4 — ORCHESTRATED
+Context, capabilities, tools, and verification are dynamically routed.
+
+LEVEL 5 — VERIFIED
+The system has independent evaluation, regression testing, state integrity,
+and auditable execution.
+
+LEVEL 6 — ADAPTIVE
+The system can improve its own workflows and capability selection under
+bounded governance.
+
+LEVEL 7 — SELF-EVALUATING FRAMEWORK
+USEF itself can propose and validate improvements using empirical evidence and
+human/authorized governance.
+
+A higher maturity level is not automatically better; it is justified only when
+the additional infrastructure produces value.
+
+
+PART X — OVERALL USEF WORKFLOW
+
+
+    DEFINE
+      ↓
+    BASELINE
+      ↓
+    MAP
+      ↓
+    ASSESS
+      ↓
+    COMPILE CONTEXT
+      ↓
+    SELECT PRINCIPLES / CYCLES
+      ↓
+    ORCHESTRATE
+      ↓
+    EXECUTE
+      ↓
+    VERIFY
+      ↓
+    MEASURE
+      ↓
+    REVIEW
+      ↓
+    UPDATE STATE
+      ↓
+    GOVERN
+      ↓
+    ITERATE / STOP / ESCALATE
+
+For high-consequence systems, add:
+
+    independent audit
+    pre-action snapshot / rollback
+    human authorization gate
+    post-action verification
+
+
+PART XI — USEF AS THE FOUNDATION FOR REP
+
+
+USEF defines the universal enhancement logic.
+
+REP should implement AI-specific capabilities within that logic.
+
+Therefore, when REP is subsequently updated, it should inherit from USEF:
+
+    - Purpose and Success Conditions;
+    - Empirical Measurement;
+    - Risk and Protection;
+    - Deep Context Understanding;
+    - Targeted Improvement;
+    - Collaboration and Orchestration;
+    - Iterative Deployment;
+    - Ethical Integrity;
+    - Context Compilation;
+    - Capability Selection;
+    - Verification;
+    - Memory/State Integrity;
+    - Failure Classification;
+    - Evolution Governance;
+    - Research/Evidence discipline.
+
+REP should not redefine these principles independently unless it provides an
+AI-specific implementation extension.
+
+This creates a clean relationship:
+
+    USEF  WHAT GOOD SYSTEM ENHANCEMENT MEANS
+    REP   HOW AI-SPECIFIC ENHANCEMENT CAPABILITIES ARE IMPLEMENTED
+
+
+PART XII — RESEARCH REFERENCES
+
+
+The following sources were checked for the August 13, 2026 research horizon.
+They are external grounding, not part of USEF's authority hierarchy.
+
+1. NIST — AI Risk Management Framework
+   https://www.nist.gov/itl/ai-risk-management-framework
+   Current site status checked August 13, 2026. NIST notes the AI RMF 1.0 is
+   being revised and published a critical-infrastructure profile concept note
+   on April 7, 2026.
+
+2. NIST — AI Risk Management Framework Playbook
+   https://www.nist.gov/itl/ai-risk-management-framework/nist-ai-rmf-playbook
+   Updated June 10, 2026. Uses the Govern / Map / Measure / Manage structure.
+
+3. OpenAI — The next evolution of the Agents SDK
+   https://openai.com/index/the-next-evolution-of-the-agents-sdk/
+   April 15, 2026. Describes tool use, memory, sandbox execution and support
+   for long-horizon agent workflows.
+
+4. OpenAI — New tools for building agents
+   https://openai.com/index/new-tools-for-building-agents/
+   Describes tools, orchestration, handoffs, guardrails, tracing, and
+   observability for agent systems.
+
+5. Anthropic — Effective context-engineering themes presented in 2026
+   Current 2026 materials emphasize system prompts at the correct level,
+   token-efficient tools, just-in-time retrieval, compaction, structured
+   memory, and sub-agent architectures for long-horizon work.
+   Example event reference:
+   https://www.anthropic.com/events/anthropic-at-aws-summit-nyc-2026
+
+6. Liu & Gabriel — PM-Bench: Evaluating Prospective Memory in LLM Agents
+   arXiv:2607.12385, July 14, 2026.
+   https://arxiv.org/abs/2607.12385
+
+7. Du — Memory for Autonomous LLM Agents: Mechanisms, Evaluation, and Emerging
+   Frontiers. arXiv:2603.07670, March 8, 2026.
+   https://arxiv.org/abs/2603.07670
+
+8. Bousetouane — AI Agents Do Not Fail Alone: The Context Fails First
+   arXiv:2607.14275, July 15, 2026.
+   https://arxiv.org/abs/2607.14275
+
+9. Liu et al. — Benchmarking AI Agents for Addressing Scientific Challenges
+   Across Scales (SciAgentArena). arXiv:2606.12736, June 10, 2026.
+   https://arxiv.org/abs/2606.12736
+
+10. Xu — AI Agent Systems: Architectures, Applications, and Evaluation
+    arXiv:2601.01743, January 5, 2026.
+    https://arxiv.org/abs/2601.01743
+
+11. Google DeepMind — Co-Scientist: A multi-agent AI partner to accelerate
+    research. May 19, 2026.
+    https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/
+
+12. Google DeepMind — Conjecture Machines: AI agents and the new validation
+    bottleneck in science. July 2026.
+    https://deepmind.google/public-policy/conjecture-machines-ai-agents-and-the-new-validation-bottleneck-in-science/
+
+13. Google DeepMind — Securing the future of AI agents. June 18, 2026.
+    https://deepmind.google/blog/securing-the-future-of-ai-agents/
+
+14. NIST — Post-Quantum Cryptography project.
+    https://csrc.nist.gov/Projects/Post-Quantum-Cryptography
+    Current status checked August 13, 2026. NIST lists FIPS 203 ML-KEM,
+    FIPS 204 ML-DSA, and FIPS 205 SLH-DSA as finalized standards and reports
+    continuing migration and standardization work.
+
+
+FINAL DIRECTIVE
+
+
+USEF must remain:
+
+    measurable,
+    modular,
+    evidence-grounded,
+    risk-aware,
+    context-aware,
+    capability-realistic,
+    empirically testable,
+    continuously improvable,
+    ethically governed,
+    and implementation-ready.
+
+Do not confuse:
+
+    complexity with intelligence;
+    quantity of context with quality of context;
+    multiple agents with independent evidence;
+    memory with truth;
+    retrieval with verification;
+    explanation with transparency;
+    consensus with correctness;
+    capability with authorization;
+    simulation with reality;
+    proposed improvement with validated improvement;
+    benchmark success with real-world success.
+
+The objective of USEF is not to create the appearance of an advanced system.
+
+The objective is to create a reliable method for making systems measurably
+better while preserving safety, evidence, human agency, and control.
+
+END OF USEF — 13 AUGUST 2026
