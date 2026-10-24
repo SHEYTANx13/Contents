@@ -1584,12 +1584,7 @@ its constitutional rules.
 
 ### User's source frameworks
 
-- **F1.** SHEYTANx13, *Ai Instructions — September 2026*.
-  <https://github.com/SHEYTANx13/Contents/blob/main/AI-Frameworks/Ai-instructions-Sep2026.md>
-- **F2.** SHEYTANx13, *Reasoning Enhancement Protocol (REP)*, 13 August 2026.
-  <https://github.com/SHEYTANx13/Contents/blob/main/AI-Frameworks/REP_Updated_August_13_2026.txt>
-- **F3.** SHEYTANx13, *Unified System Enhancement Framework (USEF)*, 13 August 2026.
-  <https://github.com/SHEYTANx13/Contents/blob/main/AI-Frameworks/USEF_Updated_August_13_2026.txt>
+<https://github.com/SHEYTANx13/Contents/tree/main/AI-Frameworks>
 
 ### Anthropic / Claude
 
